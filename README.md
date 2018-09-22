@@ -18,7 +18,6 @@ We expect you use: ReactJS (create-react-app), Redux, React Router, a CSS Framew
 
 # INSTALATION
 
-Identificación de tweets relevantes en tiempo real.
 
 ## Download Project
 
