@@ -1,4 +1,4 @@
-# ReactJS Test Appysphere
+# ReactJS Test
 
 
 Using the Redux Blog Post API, fetch the data and develop a ReactJS SPA following the user stories given below.
@@ -21,7 +21,7 @@ We expect you use: ReactJS (create-react-app), Redux, React Router, a CSS Framew
 
 ## Download Project
 
-`git clone https://github.com/j0araya/ReactJS-Test.git` on project folder. 
+`git clone https://github.com/j0araya/ReactJS-Test.git` on project folder.
 
 ## Setup
 
