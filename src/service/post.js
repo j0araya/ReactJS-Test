@@ -32,7 +32,6 @@ class PostService {
         return await response.json();
     }
     async remove(id) {
-        console.log('remmove',id);
         const url = `${CORE_ENDPOINT}/${id}`;
         const response = await fetch(url, {
             method: 'DELETE',

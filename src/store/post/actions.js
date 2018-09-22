@@ -10,7 +10,6 @@ export function list() {
     return async (dispatch) => {
         try {
             const posts = await PostService.list();
-            console.log('lit', posts);
             dispatch({
                 type: types.LIST_POST,
                 posts
@@ -25,7 +24,6 @@ export function get(id) {
     return async (dispatch) => {
         try {
             const post = await PostService.get(id);
-            console.log('get', post);
             dispatch({
                 type: types.GET_POST,
                 post

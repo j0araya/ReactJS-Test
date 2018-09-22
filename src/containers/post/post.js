@@ -48,7 +48,6 @@ class Post extends Component {
     }
 
     submit() {
-        console.log('post', this.state.post);
         this.props.dispatch(actions.post(this.state.post)).then(_ => {
             this.props.history.goBack();
         });

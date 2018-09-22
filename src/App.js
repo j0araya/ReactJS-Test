@@ -40,7 +40,6 @@ class App extends Component {
   }
 
   buttonDelete(id) {
-    console.log('buttom', id);
     return (
       <Button color="danger" onClick={() => this.selectItemToDelete(id)}>Delete</Button>
     )
@@ -76,7 +75,6 @@ class App extends Component {
   render() {
     // const { selectedPost } = this.state;
     const { posts = [] } = this.props;
-    console.log('data', posts, this.props);
 
     return (
       <div className="App">
