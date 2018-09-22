@@ -29,7 +29,7 @@ class Post extends Component {
         }
     }
     componentDidUpdate(prevProps, prevState) {
-        if (prevProps.post !== this.props.post && !this.props.post) {
+        if (prevProps.post !== this.props.post && this.props.post) {
             this.setState({ post: this.props.post });
         }
     }
