@@ -16,8 +16,14 @@ class PostService {
         const url = CORE_ENDPOINT;
         const response = await fetch(url, {
             method: 'POST',
-            body: JSON.stringify(data)
+            body: JSON.stringify(data),
+            headers: {
+                'Content-Type': 'application/json'
+            }
         });
+        if (!response.ok) {
+            return new Error(`Status ${response.status}`);
+        }
         return await response.json();
     }
 
@@ -36,6 +42,9 @@ class PostService {
         const response = await fetch(url, {
             method: 'DELETE',
         });
+        if (!response.ok) {
+            return new Error(`Status ${response.status}`);
+        }
         return await response.json();
     }
 }
