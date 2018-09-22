@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-    Row, Col, Container,
     Input, Form, FormGroup, Label, FormFeedback
 } from 'reactstrap';
 import autoBind from 'react-autobind';
