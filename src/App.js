@@ -7,8 +7,6 @@ import * as actions from './store/post/actions';
 import * as reducers from './store/post/reducer';
 import autoBind from 'react-autobind';
 
-
-
 import {
   Table,
   Button,
@@ -42,7 +40,7 @@ class App extends Component {
   buttonDelete(id) {
     return (
       <Button color="danger" onClick={() => this.selectItemToDelete(id)}>Delete</Button>
-    )
+    );
   }
 
   buttonView(id) {
@@ -54,8 +52,9 @@ class App extends Component {
   buttonCreate() {
     return (
       <Button color="primary" onClick={() => this.props.history.push('/post/')}>Create</Button>
-    )
+    );
   }
+
   selectItemToDelete(id) {
     this.selectedPost = id;
     this.toggle();

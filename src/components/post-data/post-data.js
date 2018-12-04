@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import {
-    Input, Form, FormGroup, Label, FormFeedback
+  Input, Form, FormGroup, Label, FormFeedback,
 } from 'reactstrap';
 import autoBind from 'react-autobind';
 
 
 class PostData extends Component {
 
-    constructor(props) {
+  constructor(props) {
         super(props);
         autoBind(this);
     }
